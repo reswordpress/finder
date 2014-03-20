@@ -9,7 +9,6 @@ declare(strict_types=1);
 
 namespace Nette\Utils;
 
-use Nette;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 
@@ -26,8 +25,6 @@ use RecursiveIteratorIterator;
  */
 class Finder implements \IteratorAggregate, \Countable
 {
-	use Nette\SmartObject;
-
 	/** @var callable  extension methods */
 	private static $extMethods = [];
 
