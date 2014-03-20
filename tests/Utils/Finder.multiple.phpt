@@ -40,7 +40,7 @@ test(function () { // recursive
 
 	Assert::exception(function () {
 		Finder::find('*')->from('files/subdir/subdir2')->from('files/images');
-	}, Nette\InvalidStateException::class, '');
+	}, InvalidArgumentException::class, '');
 });
 
 
@@ -60,5 +60,5 @@ test(function () { // non-recursive
 
 	Assert::exception(function () {
 		Finder::find('*')->in('files/subdir/subdir2')->in('files/images');
-	}, Nette\InvalidStateException::class, '');
+	}, InvalidArgumentException::class, '');
 });
