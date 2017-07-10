@@ -384,5 +384,4 @@ class Finder implements \IteratorAggregate, \Countable
 	{
 		self::$extMethods[$name] = $callback;
 	}
-
 }
